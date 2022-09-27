@@ -1,0 +1,17 @@
+name: Auto merge
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - run: gh pr create -B store-1 -t "Update store branch\:\\ Store 1"
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,28 @@
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Custom #
+######################
+*.sass-cache*
+node_modules
+_site
+dist
+upload
+/.idea
+/.vscode
+deploy.log
+!.circleci/config.yml
+secrets.json
+.jekyll-metadata
+.ruby-version
+lerna-debug.log
+/packages/slate-cli/lib/
+/packages/slate-tools/lib/
+.changelog/
