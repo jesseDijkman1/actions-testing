@@ -12,6 +12,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - run: gh pr create -B store-1 -t "Update store branch\:\\ Store 1"
+    - run: gh pr create -B store-1 --title "Update store branch\:\\ Store 1" --body "Updating"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
